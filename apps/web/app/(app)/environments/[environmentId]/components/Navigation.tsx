@@ -1,7 +1,7 @@
 "use client";
 
-import FaveIcon from "@/app/favicon.ico";
 import { formbricksLogout } from "@/app/lib/formbricks";
+import BrandLogo from "@/images/brand-logo.png";
 import clsx from "clsx";
 import {
   BrushIcon,
@@ -268,7 +268,7 @@ export default function Navigation({
                 <Link
                   href={`/environments/${environment.id}/surveys/`}
                   className="flex items-center justify-center rounded-md bg-gradient-to-b text-white transition-all ease-in-out hover:scale-105">
-                  <Image src={FaveIcon} width={30} height={30} alt="faveicon" />
+                  <Image src={BrandLogo} width={55} height={40} alt="brand logo" />
                 </Link>
 
                 {navigation.map((item) => {
