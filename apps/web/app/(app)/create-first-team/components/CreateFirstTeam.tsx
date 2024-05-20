@@ -1,6 +1,7 @@
 "use client";
 
 import { createTeamAction } from "@/app/(app)/environments/[environmentId]/actions";
+import { appName } from "@/app/constants";
 import FormbricksLogo from "@/images/logo.svg";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
@@ -45,8 +46,8 @@ export const CreateFirstTeam = () => {
   return (
     <div className="flex h-full flex-col">
       <div className="flex w-full items-center justify-start px-8 py-4">
-        <Image className="w-6" src={FormbricksLogo} alt="Formbricks Logo" />
-        <p className="text ml-4 text-2xl font-bold">Formbricks</p>
+        <Image className="w-6" src={FormbricksLogo} alt={`${appName} Logo`} />
+        <p className="text ml-4 text-2xl font-bold">{appName}</p>
       </div>
       <div className="flex h-[calc(100%-12rem)] items-center justify-center border-red-800">
         <form onSubmit={handleSubmit(onCreateTeam)}>

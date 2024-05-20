@@ -1,3 +1,4 @@
+import { appName } from "@/app/constants";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Metadata } from "next";
 
@@ -5,8 +6,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | Formbricks",
-    default: "Formbricks",
+    template: `%s | ${appName}`,
+    default: `${appName}`,
   },
   description: "Open-Source Survey Suite",
 };
