@@ -1,6 +1,7 @@
 "use client";
 
 import { NavigationLink } from "@/app/(app)/environments/[environmentId]/components/NavigationLink";
+import { appName } from "@/app/constants";
 import { formbricksLogout } from "@/app/lib/formbricks";
 import FBLogo from "@/images/formbricks-wordmark.svg";
 import {
@@ -220,7 +221,7 @@ export const MainNavigation = ({
                     "flex items-center justify-center transition-opacity duration-100",
                     isTextVisible ? "opacity-0" : "opacity-100"
                   )}>
-                  <Image src={FBLogo} width={160} height={30} alt="Formbricks Logo" />
+                  <Image src={FBLogo} width={160} height={30} alt={`${appName} Logo`} />
                 </Link>
               )}
               <Button
